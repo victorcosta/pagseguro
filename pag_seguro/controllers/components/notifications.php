@@ -76,7 +76,7 @@ class NotificationsComponent extends Object {
 			'timeout' => $this->timeout
 		));
 
-		$response = $HttpSocket->get($this->pgURI . $code, "email={$__config['email']}&token={$__config['token']}");
+		$response = $HttpSocket->get($this->pgURI . $code, "email={$this->__config['email']}&token={$this->__config['token']}");
 		return $this->__status($response);
 	}
 
